@@ -1,7 +1,1 @@
-# ระบบ ตู้แช่เย็น
-
-## ผู้จัดทำ
-
-นายณัฐพงษ์ เหียนขุนทด
-
-6110406015
+# Simple-food-management-for-refrigerator
