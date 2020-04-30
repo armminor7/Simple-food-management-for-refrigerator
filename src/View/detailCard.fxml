@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootCardPane" prefHeight="160.0" prefWidth="400.0" stylesheets="@../StyleSheet/detail-card.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DetailCardController">
+   <children>
+      <GridPane layoutX="10.0" layoutY="10.0" prefHeight="160.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="70.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="160.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <ImageView fx:id="foodImage" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../../res/images/ice-cream.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Text fx:id="foodName" strokeType="OUTSIDE" strokeWidth="0.0" text="FoodName" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="16.0" top="10.0" />
+               </GridPane.margin>
+            </Text>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" prefHeight="28.0" prefWidth="220.0" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="numAmount" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="41.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="foodUnit" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UnitOfFood" wrappingWidth="90.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+               <GridPane.margin>
+                  <Insets top="30.0" />
+               </GridPane.margin>
+            </HBox>
+            <Label fx:id="storeDate" graphicTextGap="3.0" prefHeight="22.0" prefWidth="280.0" text="( Stored Date :  01/01/1999 )" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <graphic>
+                  <HBox maxHeight="-Infinity" prefHeight="22.0" prefWidth="130.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stored">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="numStore" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="30.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="storeDay" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="days">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </graphic>
+               <GridPane.margin>
+                  <Insets top="60.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Label fx:id="expireDate" graphicTextGap="3.0" layoutX="170.0" layoutY="72.0" prefHeight="22.0" prefWidth="280.0" text="( Expire Date :  01/01/1999 )" GridPane.columnIndex="1" GridPane.valignment="TOP">
+               <graphic>
+                  <HBox maxHeight="-Infinity" prefHeight="22.0" prefWidth="130.0">
+                     <children>
+                        <Text fx:id="expText" strokeType="OUTSIDE" strokeWidth="0.0" text="Expires in">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="numExpire" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="30.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="2.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text fx:id="expireDay" layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="days">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+               </graphic>
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="85.0" />
+               </GridPane.margin>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" prefHeight="30.0" spacing="3.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
+               <children>
+                  <Button fx:id="minBtn" mnemonicParsing="false" text="MIN">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="minus" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="15.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="MINUS" size="12">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </FontAwesomeIconView>
+                     </graphic>
+                  </Button>
+                  <TextField fx:id="numGetFood" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="42.0" text="1">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <Button fx:id="plus" layoutX="45.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="15.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" size="12">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </FontAwesomeIconView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="maxBtn" layoutX="45.0" layoutY="10.0" mnemonicParsing="false" text="MAX">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="getFoodBtn" layoutX="149.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="28.0" prefWidth="70.0" text="GET FOOD">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <GridPane.margin>
+                  <Insets bottom="10.0" />
+               </GridPane.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </GridPane>
+      <GridPane fx:id="addBg" prefHeight="160.0" prefWidth="400.0" style="-fx-background-color: #ecf0f1;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <FontAwesomeIconView fx:id="addBtn" fill="#95a8f5" glyphName="PLUS_CIRCLE" opacity="0.6" size="80" styleClass="add-btn" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

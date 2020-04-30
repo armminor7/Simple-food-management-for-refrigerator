@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="736.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DetailListController">
+   <children>
+      <ScrollPane fx:id="scrollPaneRoot" hbarPolicy="NEVER" prefHeight="700.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox fx:id="vboxContainer" prefHeight="400.0" prefWidth="400.0">
+               <padding>
+                  <Insets top="20.0" />
+               </padding></VBox>
+         </content>
+      </ScrollPane>
+      <FontAwesomeIconView fx:id="backIcon" fill="#3fa1dd" glyphName="ANGLE_DOUBLE_LEFT" scaleX="1.2" size="35" stroke="#3fa1dd" strokeLineCap="ROUND" strokeLineJoin="ROUND" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+</AnchorPane>

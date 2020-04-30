@@ -1,0 +1,5 @@
+.add-btn:hover {
+    -fx-opacity: 1;
+    -fx-scale-x: 110%;
+    -fx-scale-y: 110%;
+}

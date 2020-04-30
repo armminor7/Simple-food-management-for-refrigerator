@@ -1,0 +1,7 @@
+.icon:hover {
+    -fx-opacity: 1;
+}
+.closeText:hover {
+    -fx-stroke: #eee;
+    -fx-stroke-width: 1px;
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.weathericons.WeatherIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" stylesheets="@../StyleSheet/open-refrige.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OpenRefrigeController">
+   <children>
+      <ImageView fx:id="bgOpenRefrige" fitHeight="760.0" fitWidth="400.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../res/images/refrigerator-open.png" />
+         </image></ImageView>
+      <GridPane layoutX="29.0" layoutY="24.0" prefHeight="662.0" prefWidth="345.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="24.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="50.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="220.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="138.5" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="138.5" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="138.5" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Rectangle fx:id="cell00" arcHeight="40.0" arcWidth="40.0" fill="#8cd6ff" height="140.0" stroke="#6179e4" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="140.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="cell01" arcHeight="40.0" arcWidth="40.0" fill="#8cd6ff" height="140.0" layoutX="22.0" layoutY="45.0" stroke="#6179e4" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="140.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="cell10" arcHeight="40.0" arcWidth="40.0" fill="#d7e8f2" height="120.0" layoutX="194.0" layoutY="45.0" stroke="#90a2f2" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="120.0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+            <Rectangle fx:id="cell11" arcHeight="40.0" arcWidth="40.0" fill="#d7e8f2" height="120.0" layoutX="22.0" layoutY="284.0" stroke="#90a2f2" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="120.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Rectangle fx:id="cell20" arcHeight="40.0" arcWidth="40.0" fill="#d7e8f2" height="120.0" layoutX="186.0" layoutY="284.0" stroke="#90a2f2" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="120.0" GridPane.rowIndex="3" />
+            <Rectangle fx:id="cell21" arcHeight="40.0" arcWidth="40.0" fill="#d7e8f2" height="120.0" layoutX="13.0" layoutY="492.0" stroke="#90a2f2" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="120.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Rectangle fx:id="cell30" arcHeight="40.0" arcWidth="40.0" fill="#d7e8f2" height="120.0" layoutX="209.0" layoutY="404.0" stroke="#90a2f2" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="120.0" GridPane.rowIndex="4" />
+            <Rectangle fx:id="cell31" arcHeight="40.0" arcWidth="40.0" fill="#d7e8f2" height="120.0" layoutX="37.0" layoutY="543.0" stroke="#90a2f2" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="3.0" width="120.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ImageView fx:id="imageCell00" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+               <image>
+                  <Image url="@../../res/images/ice-cream.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageCell01" fitHeight="120.0" fitWidth="120.0" layoutX="17.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../../res/images/ice-cream.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageCell10" fitHeight="120.0" fitWidth="110.0" layoutX="189.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../res/images/ice-cream.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageCell11" fitHeight="120.0" fitWidth="110.0" layoutX="17.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../res/images/ice-cream.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageCell20" fitHeight="120.0" fitWidth="110.0" layoutX="189.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../res/images/ice-cream.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imageCell21" fitHeight="120.0" fitWidth="110.0" layoutX="17.0" layoutY="487.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ImageView fx:id="imageCell30" fitHeight="120.0" fitWidth="110.0" layoutX="214.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4" />
+            <ImageView fx:id="imageCell31" fitHeight="120.0" fitWidth="110.0" layoutX="42.0" layoutY="543.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <FontAwesomeIconView fx:id="addIcon00" fill="WHITE" glyphName="PLUS_CIRCLE" opacity="0.5" size="80" styleClass="icon">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="addIcon01" fill="WHITE" glyphName="PLUS_CIRCLE" layoutX="62.0" layoutY="148.0" opacity="0.5" size="80" styleClass="icon" GridPane.columnIndex="1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="addIcon10" fill="#90a2f2" glyphName="PLUS_CIRCLE" layoutX="235.0" layoutY="148.0" opacity="0.5" size="60" styleClass="icon" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="addIcon11" fill="#90a2f2" glyphName="PLUS_CIRCLE" layoutX="62.0" layoutY="387.0" opacity="0.5" size="60" styleClass="icon" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="addIcon20" fill="#90a2f2" glyphName="PLUS_CIRCLE" layoutX="235.0" layoutY="387.0" opacity="0.5" size="60" styleClass="icon" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="addIcon21" fill="#90a2f2" glyphName="PLUS_CIRCLE" layoutX="62.0" layoutY="595.0" opacity="0.5" size="60" styleClass="icon" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="addIcon30" fill="#90a2f2" glyphName="PLUS_CIRCLE" layoutX="243.0" layoutY="484.0" opacity="0.5" size="60" styleClass="icon" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="addIcon31" fill="#90a2f2" glyphName="PLUS_CIRCLE" layoutX="71.0" layoutY="623.0" opacity="0.5" size="60" styleClass="icon" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <WeatherIconView fill="WHITE" glyphName="WMO4680_54" size="40" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="30.0" />
+               </GridPane.margin>
+            </WeatherIconView>
+            <WeatherIconView fill="WHITE" glyphName="WMO4680_54" layoutX="132.0" layoutY="84.0" size="40" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="20.0" top="30.0" />
+               </GridPane.margin>
+            </WeatherIconView>
+         </children>
+      </GridPane>
+      <Text fx:id="closeBtn" fill="WHITE" layoutX="286.0" layoutY="279.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="closeText" text="C   L   O   S   E" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="200.37890625">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+   </children>
+</AnchorPane>
